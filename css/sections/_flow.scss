@@ -1,0 +1,73 @@
+/*--------------------------------
+flow
+--------------------------------*/
+.flow {
+  margin-bottom: (210/$pc)*100vw;
+  @include sp {
+    margin-bottom: (93/$sp-w)*100vw;
+    padding-top: (60/$sp-w)*100vw;
+  }
+  &__lead {
+    width: (924/$pc)*100vw;
+    @include sp {
+      width: (335/$sp-w)*100vw;
+    }
+    .section-top {
+      margin-bottom: 59px;
+      @include sp {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  &__text {
+    margin-bottom: 40px;
+    line-height: (38/18);
+    @include sp {
+      margin-bottom: 10px;
+      font-size: 10px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.slider-list {
+  margin: 55px calc(50% - 50vw) 84px;
+  width: 100vw;
+  @include sp {
+    margin: 17px calc(50% - 50vw) 45px;
+  }
+  &__item {
+    margin-right: (32/$pc)*100vw;
+    padding-top: 4px;//hover時に画像が切れないようにする措置
+    width: (388/$pc)*100vw;
+    @include sp {
+      margin-right: (10/$sp-w)*100vw;
+      width: (132/$sp-w)*100vw;
+    }
+    &:first-child {
+      padding-left: (148/$pc)*100vw;
+      box-sizing: content-box;
+      @include sp {
+        padding-left: (20/$sp-w)*100vw;
+      }
+    }
+  }
+  &__img {
+    margin-bottom: 22px;
+    transition: .3s;
+    @include sp {
+      margin-bottom: 5px;
+    }
+    &:hover {
+      transform: translate(-4Px, -4px);
+      transition: .3s;
+    }
+  }
+  &__text {
+    font-size: 2.4rem;
+    @include sp {
+      font-size: 8px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+/*--------------------------------
+header
+--------------------------------*/
+.header {
+  position: relative;
+  margin-bottom: (160/$pc)*100vw;
+  padding-top: (426/$pc)*100vw;
+  @include sp {
+    width: (335/$sp-w)*100vw;
+    margin: 0 auto (162/$sp-w)*100vw;
+    padding-top: (214/$sp-w)*100vw;
+  }
+  &__title-top {
+    margin-left: (94/$pc)*100vw;
+    font-family: $marcellus;
+    font-size: (140/$pc)*100vw;
+    color: $color-white;
+    @include sp {
+      margin-left: (10/$sp-w)*100vw;
+      font-size: (49/$sp-w)*100vw;
+    }
+  }
+  &__title-bottom {
+    margin-left: (484/$pc)*100vw;
+    font-family: $marcellus;
+    font-size: (140/$pc)*100vw;
+    color: $color-white;
+    @include sp {
+      margin-left: (40/$sp-w)*100vw;
+      font-size: (49/$sp-w)*100vw;
+    }
+  }
+  &__text {
+    margin-top: (80/$pc)*100vw;
+    text-align: center;
+    font-family: $notosans;
+    color: $color-black-2;
+    text-transform: uppercase;
+    @include sp {
+      margin-top: (30/$sp-w)*100vw;
+    }
+  }
+  &__kv {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: (580/$pc)*100vw;
+    z-index: -1;
+    @include sp {
+      width: (203/$sp-w)*100vw;
+    }
+  }
+}

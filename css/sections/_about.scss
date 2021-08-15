@@ -1,0 +1,49 @@
+/*--------------------------------
+about
+--------------------------------*/
+.about {
+  margin-bottom: (172/$pc)*100vw;
+  @include sp {
+    margin-bottom: (63/$sp-w)*100vw;
+  }
+  .section-top {
+    margin-top: 48px;
+    @include sp {
+      margin-top: 16px;
+    }
+  }
+  &__text-wrapper {
+    width: (598/$pc)*100vw;
+    margin: 50px 0 40px;
+    @include sp {
+      width: (335/$sp-w)*100vw;
+      margin-top: 28px;
+    }
+  }
+  &__text {
+    margin-bottom: 40px;
+    line-height: (38/18);
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include sp {
+      margin-bottom: 20px;
+      line-height: 2;
+    }
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__tag {
+    margin-right: (32/$pc)*100vw;
+    font-family: $notosans;
+    font-size: 1.6rem;
+    font-weight: bold;
+    @include sp {
+      margin-right: (10/$sp-w)*100vw;
+      margin-bottom: (20/$sp-w)*100vw;
+      font-size: 16px;
+    }
+  }
+}

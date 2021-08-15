@@ -1,0 +1,57 @@
+/*--------------------------------
+base
+--------------------------------*/
+html {
+  font-size: 62.5%;
+  @include sp {
+    font-size: 41.66666666666667%;//rem指定でpc時1.8rem(18px) → スマホ時1.2rem(12px)の様に 0.6666666666666667の割合で変化する場合はスマホ時のフォントサイズ指定は不要
+  }
+}
+body {
+  font-family: $yugothic, sans-serif;
+  background-color: $color-bg;
+  font-size: 1.8em;
+}
+.main {
+  overflow: hidden;//flowセクションのスライダーの影響で横スクロールバーを表示させない為の措置
+}
+img {
+  width: 100%;
+}
+.section-inner {
+  padding: 0 (148/$pc)*100vw;
+  @include sp {
+    padding: 0 (20/$sp-w)*100vw;
+  }
+}
+.section-title {
+  font-family: $marcellus;
+  font-size: (32/$pc)*100vw;
+  color: $color-white;
+  text-transform: uppercase;
+  @include sp {
+    font-size: (16/$sp-w)*100vw;  
+  }
+}
+.section-top {
+  font-family: $notosans;
+  font-size: (60/$pc)*100vw;
+  letter-spacing: 0.05em;
+  line-height: (80/60);
+  @include sp {
+    font-size: (23/$sp-w)*100vw;
+    line-height: (42/24);
+  }
+}
+.border {
+  width: (60/$sp-w)*100vw;
+  height: 1px;
+  margin: 0 auto;
+  background-color: $color-border;
+}
+.pc-none {
+  display: none;
+  @include sp {
+    display: block;
+  }
+}
